@@ -8,7 +8,7 @@ import numpy as np
 x = np.linspace(0, 3 * np.pi, 100)
 y = np.sin(x)
 
-plt.rcParams['font.sans-serif']=['SimHei'] #加上这一句就能在图表中显示中文
+plt.rcParams['font.sans-serif']=['SimHei'] #加上这一句就能在图表中显示中文、
 plt.rcParams['axes.unicode_minus']=False #用来正常显示负号
 plt.subplot(1,2,1)
 plt.title(r'$f(x)=sin(x)$') 

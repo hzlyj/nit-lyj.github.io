@@ -20,7 +20,7 @@ e^{i\pi} +1=0
 
 *[ ]黄哼哼唧唧
 *[ ]规划局规划
-
+$\sum_{i=0}^N\int_{a}^{b}g(t,i)\text{d}t$
 <table><tbody><tr>
 
 <th>方法说明</th><th>颜色名称</th><th>颜色</th></tr>
