@@ -1,27 +1,71 @@
-#相关使用说明
+#课本图1-12 1-14
 
-* 关于在表格中使用颜色的说明
+* 关于在表格中使用颜色的说明Python代码
 
 ```
-https://blog. csdn. net/thither_ shore/article/detai1s/52328313
+import numpy as np
+import matplotlib.pyplot as plt
+import mpl_toolkits.axisartist as axisartist
+fig = plt.figure(figsize=(8, 8))
+ax = axisartist.Subplot(fig, 111)  
+fig.add_axes(ax)
+ax.axis[:].set_visible(False)
+ax.axis["x"] = ax.new_floating_axis(0,0)
+ax.axis["x"].set_axisline_style("->", size = 1.0)
+ax.axis["y"] = ax.new_floating_axis(1,0)
+ax.axis["y"].set_axisline_style("-|>", size = 1.0)
+ω=np.pi
+a=2
+φ=np.pi/3
+t=np.linspace(-np.pi, np.pi, 1000)
+x1=a*np.cos(ω*t+φ)
+ax.set_title("X=Acos(ωt+φ)")
+plt.xticks([])
+plt.yticks([])
+plt.plot(t,x1)
+fig = plt.figure(figsize=(8, 8))
+ax = axisartist.Subplot(fig, 111)  
+fig.add_axes(ax)
+ax.axis[:].set_visible(False)
+ax.axis["x"] = ax.new_floating_axis(0,0)
+ax.axis["x"].set_axisline_style("->", size = 1.0)
+ax.axis["y"] = ax.new_floating_axis(1,0)
+ax.axis["y"].set_axisline_style("-|>", size = 1.0)
+ω=np.pi
+a=2
+n=3
+φ=np.pi/3
+t=np.linspace(-np.pi, np.pi, 1000)
+x2 =np.e**t*a*np.cos(ω*t+φ)
+ax.set_title("X=Ce**αtcos(ωt+φ)   α>0")
+plt.xticks([])
+plt.yticks([])
+plt.plot(t,x2)
+fig = plt.figure(figsize=(8, 8))
+ax = axisartist.Subplot(fig, 111)  
+fig.add_axes(ax)
+ax.axis[:].set_visible(False)
+ax.axis["x"] = ax.new_floating_axis(0,0)
+ax.axis["x"].set_axisline_style("->", size = 1.0)
+ax.axis["y"] = ax.new_floating_axis(1,0)
+ax.axis["y"].set_axisline_style("-|>", size = 1.0)
+ω=np.pi
+a=2
+n=3
+φ=np.pi/3
+t=np.linspace(-np.pi, np.pi, 1000)
+x2 =np.e**-t*a*np.cos(ω*t+φ)
+plt.xticks([])
+plt.yticks([])
+ax.set_title("X=Ce**αtcos(ωt+φ)   α<0")
+plt.plot(t,x2)
+plt.show()
 ```
 
-* 添加公式
-```math
-
-e^{i\pi} +1=0
+* 效果图
 ```
-* 添加表格
+![Image text]"https://github.com/nit-lyj/nit-lyj.github.io/blob/master/1.png" 
+```
 
-| 一个普通标题 | 一个普通标题 | 一个普通标题 |
-| ------ | ------ | ------ |
-| 短文本 | 中等文本 | 稍微长一点的文本 |
-| 稍微长一点的文本 | 短文本 | 中等文本 |
 
-* [x] 成功后
-* [ ] 黄哼哼唧唧
-* [ ] 规划局规划
-$\sum_{i=0}^N\int_{a}^{b}g(t,i)\text{d}t$
-<table><tbody><tr>
 
-<th>方法说明</th><th>颜色名称</th><th>颜色</th></tr>
