@@ -1,4 +1,4 @@
-#课本图1-12 1-14
+# 课本图1-12 1-14
 
 * 关于在表格中使用颜色的说明Python代码
 
@@ -64,7 +64,9 @@ plt.show()
 
 * 效果图
 ```
-![Image text]"https://github.com/nit-lyj/nit-lyj.github.io/blob/master/1.png" 
+![Image text](https://github.com/nit-lyj/nit-lyj.github.io/blob/master/1.png)
+![Image text](https://github.com/nit-lyj/nit-lyj.github.io/blob/master/2.png)
+![Image text](https://github.com/nit-lyj/nit-lyj.github.io/blob/master/3.png)
 ```
 
 
